@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CenteredImg from './centeredImg';
-import Category from 'styles/category';
-import DateTime from 'styles/dateTime';
+import Category from 'Styles/category';
 import TruncateMarkup from 'react-truncate-markup';
 
 const Card = ({ thumbnail, alt, category, title, desc, authors, starred, date }) => {
@@ -11,7 +10,7 @@ const Card = ({ thumbnail, alt, category, title, desc, authors, starred, date })
   // )
   return (
     <Wrapper>
-      { starred == "true" &&
+      { starred &&
         <div className="github-corner" aria-label="starred">
           <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
           {/* width="75" height="27" viewBox="0 0 75 27" */}
