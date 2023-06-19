@@ -159,7 +159,9 @@ const About = () => {
                       <b>{member.title}</b>
                     </a>
                     <br />
-                    {/* <p style={{textAlign:"center",fontWeight:"bold",fontSize:"small!important",margin:"0px"}}>{member.pos}</p> */}
+                    {member.role?
+                    <p style={{textAlign:"center",fontWeight:"bold",fontSize:"small!important",margin:"0px"}}>{member.role}</p>
+                    :null}
                   </figcaption>
                 </figure>
               ))}
